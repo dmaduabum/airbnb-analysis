@@ -33,13 +33,13 @@ python run_analysis.py
 ```
 This single command executes the entire pipeline:
 
-Downloads raw Airbnb data from Inside Airbnb
+- Downloads raw Airbnb data from Inside Airbnb
 
-Cleans and processes the data
+- Cleans and processes the data
 
-Creates aggregated joint dataset
+- Creates aggregated joint dataset
 
-Generates exploratory figures and visualizations
+- Generates exploratory figures and visualizations
 
-Produces summary statistics and statistical tests
+- Produces summary statistics and statistical tests
 
