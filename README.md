@@ -1,10 +1,13 @@
 Installation & Setup
 1. Clone the Repository
 bash
+```
 git clone <repository-url>
 cd airbnb-analysis
-2. Create Virtual Environment
+```
+3. Create Virtual Environment
 bash
+```
 # Create virtual environment
 python3 -m venv venv
 
@@ -13,3 +16,4 @@ python3 -m venv venv
 source venv/bin/activate
 # On Windows:
 venv\Scripts\activate
+```
