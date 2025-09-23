@@ -1,11 +1,11 @@
-Installation & Setup
-1. Clone the Repository
+## Installation & Setup
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/dmaduabum/airbnb-analysis.git
 cd airbnb-analysis
 ```
-3. Create Virtual Environment
+### 2. Create Virtual Environment
 
 ```bash
 # Create virtual environment
@@ -17,7 +17,7 @@ source venv/bin/activate
 # On Windows:
 venv\Scripts\activate
 ```
-3. Install Dependencies
+### 3. Install Dependencies
 
 ```bash
 # Upgrade pip first
