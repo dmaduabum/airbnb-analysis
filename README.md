@@ -6,7 +6,7 @@ git clone https://github.com/dmaduabum/airbnb-analysis.git
 cd airbnb-analysis
 ```
 3. Create Virtual Environment
-bash
+
 ```bash
 # Create virtual environment
 python3 -m venv venv
@@ -18,7 +18,7 @@ source venv/bin/activate
 venv\Scripts\activate
 ```
 3. Install Dependencies
-bash
+
 ```bash
 # Upgrade pip first
 python3 -m pip install --upgrade pip
