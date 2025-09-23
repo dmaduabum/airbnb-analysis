@@ -1,0 +1,7 @@
+,price,price,price,price,availability_365,availability_365,availability_365,number_of_reviews,number_of_reviews,number_of_reviews
+,mean,median,std,count,mean,median,std,mean,median,std
+quarter,,,,,,,,,,
+Q1,250.42,207.0,201.59,2127,220.53,240.0,104.48,70.21,23.0,113.36
+Q2,175.9,131.0,164.37,2127,236.26,250.0,102.96,76.04,28.0,117.91
+Q3,196.39,159.0,164.03,2127,208.9,217.0,108.53,78.52,31.0,120.29
+Q4,894.54,190.0,5366.6,2127,223.94,239.0,102.92,83.67,36.0,124.65

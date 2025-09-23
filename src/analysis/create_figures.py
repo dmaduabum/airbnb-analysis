@@ -13,7 +13,7 @@ def generate_exploratory_figures(df, results_path):
     plt.title('Price Distribution by Quarter')
     plt.xticks(rotation=45)
     plt.tight_layout()
-    plt.savefig(results_path + 'price_distribution_by_quarter.png')
+    plt.savefig(results_path + '/price_distribution_by_quarter.png')
     plt.close()
     
     # Availability trends
@@ -23,7 +23,7 @@ def generate_exploratory_figures(df, results_path):
     plt.title('Average Availability by Quarter')
     plt.ylabel('Average Availability (days)')
     plt.tight_layout()
-    plt.savefig(results_path + 'availability_by_quarter.png')
+    plt.savefig(results_path + '/availability_by_quarter.png')
     plt.close()
     
     # Correlation heatmap (for numerical columns)
@@ -34,7 +34,7 @@ def generate_exploratory_figures(df, results_path):
     sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', center=0)
     plt.title('Correlation Matrix')
     plt.tight_layout()
-    plt.savefig(results_path + 'correlation_matrix.png')
+    plt.savefig(results_path + '/correlation_matrix.png')
     plt.close()
 
 def main():
@@ -43,7 +43,7 @@ def main():
     processed_data_path = os.path.join(project_path, "data", "processed")
     figures_results_path = os.path.join(project_path, "results", "figures")
     
-    df = pd.read_csv(processed_data_path + "boston_listings_joint.csv")
+    df = pd.read_csv(processed_data_path + "/boston_listings_joint.csv")
     
     print("Generating exploratory figures...")
     generate_exploratory_figures(df, figures_results_path)

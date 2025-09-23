@@ -41,6 +41,7 @@ def engineer_features(df):
     print("Engineering features...")
     
     #  Price-based features
+    df = df.copy()
     df['log_price'] = np.log(df['price'])  # For normalized distribution
     
     # Price categories
@@ -52,11 +53,6 @@ def engineer_features(df):
     # Availability features
     df['availability_rate'] = df['availability_365'] / 365
     df['is_highly_available'] = df['availability_365'] > 180  # Available > 6 months
-    
-    
-    # Review activity features
-    df['is_active_host'] = df['days_since_last_review'] < 180  # Reviewed in last 6 months
-    df['review_frequency'] = df['number_of_reviews'] / (df['days_since_last_review'] + 1)
     
     # Seasonal/quarter features
     df['quarter_num'] = df['quarter'].str.replace('Q', '').astype(int)
