@@ -1,7 +1,7 @@
 # Platform Competition with Heterogeneous Hosts
 
 ## Description
-Background descriptive statistics and plots for the paper "Platform Competition with Heterogeneous Hosts" that aims to estimate equilibrium in a housing platform that su
+Background descriptive statistics and plots for the paper "Platform Competition with Heterogeneous Hosts" that aims to estimate equilibrium in a platform economy: housing. This is still a work in progress.
 
 
 ## Installation & Setup
