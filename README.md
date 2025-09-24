@@ -49,5 +49,5 @@ This single command executes the entire pipeline:
 This is still a work in progress.
 - Create and implement the model (based on BLP(1995) combined with nested logit)
 - Expand to all US states listed in Inside Airbnb
-- Further automate the 
+- Further automate the data retrival process
 
