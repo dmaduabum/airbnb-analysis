@@ -40,13 +40,9 @@ python run_analysis.py
 This single command executes the entire pipeline:
 
 - Downloads raw Airbnb data from Inside Airbnb
-
 - Cleans and processes the data
-
 - Creates aggregated joint dataset
-
 - Generates exploratory figures and visualizations
-
 - Produces summary statistics and statistical tests
 
 ## Next Steps
