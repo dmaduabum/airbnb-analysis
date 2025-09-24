@@ -1,7 +1,7 @@
 # Platform Competition with Heterogeneous Hosts
 
 ## Description
-
+Background descriptive statistics and plots for the paper "Platform Competition with Heterogeneous Hosts" that aims to estimate equilibrium in a housing platform that su
 
 
 ## Installation & Setup
@@ -51,5 +51,6 @@ This single command executes the entire pipeline:
 
 ## Next Steps
 This is still a work in progress.
-- Create and implement the model...
+- Create and implement the model (based on BLP(1995) combined with nested logit)
+- Expand to all US states listed in Inside Airbnb
 
