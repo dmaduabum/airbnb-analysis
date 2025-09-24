@@ -21,8 +21,11 @@ def clean_airbnb_data(df):
     
     # Ensure correct dtypes
     df["id"] = pd.to_numeric(df["id"], errors="coerce").astype("Int64")
-    df["host_id"] = pd.to_numeric(df["host_id"], errors="coerce").astype("Int64")
-    df["last_review"] = pd.to_datetime(df["last_review"], errors="coerce")
+    if "host_id" in df.columns:
+        df["host_id"] = pd.to_numeric(df["host_id"], errors="coerce").astype("Int64")
+    if "last_review" in df.columns:
+        df["last_review"] = pd.to_datetime(df["last_review"], errors="coerce")
+
 
     numeric_cols = [
         "latitude", "longitude", "price", "minimum_nights",
@@ -31,7 +34,9 @@ def clean_airbnb_data(df):
         "number_of_reviews_ltm"
     ]
     for col in numeric_cols:
-        df[col] = pd.to_numeric(df[col], errors="coerce")
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors="coerce")
+    
 
     # --- Drop weird data points ---
     df = df[df["price"] >= 0]                          # no negative prices
