@@ -4,6 +4,7 @@
 Background descriptive statistics and plots for the paper "Platform Competition with Heterogeneous Hosts" that aims to estimate equilibrium in a platform economy: housing. This is still a work in progress. The data set looks at the boston host per quarter. It making it unique in that it has indidiual level level supply side data but aggregate level demand data per quate.  
 
 ## project structure
+'''
 airbnb-analysis/
 ├── data/
 │   ├── raw/                 # Downloaded CSV files (immutable source)
@@ -24,7 +25,7 @@ airbnb-analysis/
 ├── requirements.txt         # Python dependencies
 ├── run_analysis.py          # Main pipeline execution script
 └── README.md               # This file
-
+'''
 
 ## Installation & Setup
 ### 1. Clone the Repository
