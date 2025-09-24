@@ -1,7 +1,7 @@
 # Platform Competition with Heterogeneous Hosts
 
-## Description
-Background descriptive statistics and plots for the paper "Platform Competition with Heterogeneous Hosts" that aims to estimate equilibrium in a platform economy: housing. This is still a work in progress. The data set looks at the boston host per quarter. It making it unique in that it has indidiual level level supply side data but aggregate level demand data per quate.  
+## Overview
+This repo contains background descriptive statistics and plots for the paper “Platform Competition with Heterogeneous Hosts.” The project focuses on Airbnb hosts in Boston, tracked by quarter. It’s distinctive because it uses individual-level supply data paired with aggregate demand data. Work is in progress.
 
 ## Project structure
 ```
@@ -12,18 +12,18 @@ airbnb-analysis/
 ├── src/
 │   ├── pipeline/
 │   │   ├── get_raw_data.py          # Downloads raw Airbnb data
-│   │   ├── clean_raw_data.py        # Cleans and processes data
-│   │   └── create_aggregate_data.py # Creates joint dataset
+│   │   ├── clean_raw_data.py        # Cleans and validates data
+│   │   └── create_aggregate_data.py # Builds joint/aggregate dataset
 │   └── analysis/
-│       ├── create_figures.py         # Generates exploratory visualizations
-│       └── generate_summary_stats.py # Produces statistical summaries
+│       ├── create_figures.py         # Exploratory visualizations
+│       └── generate_summary_stats.py # Summary stats + statistical tests
 ├── results/
-│   ├── figures/             # Generated plots and charts
-│   └── tables/              # Summary statistics and test results
-├── tests/                   # Test files for data validation
-├── requirements.txt         # Python dependencies
-├── run_analysis.py          # Main pipeline execution script
-└── README.md               # This file
+│   ├── figures/             # Generated plots
+│   └── tables/              # Summary statistics & test results
+├── tests/                   # Pytest-based tests (validation + analysis)
+├── requirements.txt         # Python dependencies (pinned)
+├── run_analysis.py          # One-command pipeline + test runner
+└── README.md
 ```
 
 ## Installation & Setup
@@ -33,16 +33,15 @@ airbnb-analysis/
 git clone https://github.com/dmaduabum/airbnb-analysis.git
 cd airbnb-analysis
 ```
-### 2. Create Virtual Environment
+### 2. Create & Activate a Virtual Environment
 
 ```bash
-# Create virtual environment
 python3 -m venv venv
 
-# Activate virtual environment
-# On macOS/Linux:
+# macOS/Linux
 source venv/bin/activate
-# On Windows:
+
+# Windows
 venv\Scripts\activate
 ```
 ### 3. Install Dependencies
@@ -55,17 +54,18 @@ python3 -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 ## Usage
-### Run Complete Analysis Pipeline
+### One-Command Pipeline (includes tests)
 ```bash
 python run_analysis.py
 ```
-This single command executes the entire pipeline:
+This will:
 
-- Downloads raw Airbnb data from Inside Airbnb
-- Cleans and processes the data
-- Creates aggregated joint dataset
-- Generates exploratory figures and visualizations
-- Produces summary statistics and statistical tests
+1. Download raw Airbnb data
+2. Clean and validate the data
+3. Create the aggregate / joint dataset
+4. Generate figures
+5. Produce summary statistics & statistical tests
+6. Run the test suite (see “Testing” below)
 
 ## Next Steps
 This is still a work in progress.
