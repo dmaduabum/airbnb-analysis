@@ -1,3 +1,9 @@
+# Platform Competition with Heterogeneous Hosts
+
+## Description
+
+
+
 ## Installation & Setup
 ### 1. Clone the Repository
 
@@ -42,4 +48,8 @@ This single command executes the entire pipeline:
 - Generates exploratory figures and visualizations
 
 - Produces summary statistics and statistical tests
+
+## Next Steps
+This is still a work in progress.
+- Create and implement the model...
 
