@@ -1,7 +1,7 @@
 # Platform Competition with Heterogeneous Hosts
 
 ## Description
-Background descriptive statistics and plots for the paper "Platform Competition with Heterogeneous Hosts" that aims to estimate equilibrium in a platform economy: housing. This is still a work in progress.
+Background descriptive statistics and plots for the paper "Platform Competition with Heterogeneous Hosts" that aims to estimate equilibrium in a platform economy: housing. This is still a work in progress. The data set looks at the boston host per quarter. It making it unique in that it has indidiual level level supply side data but aggregate level demand data per quate.  
 
 
 ## Installation & Setup
@@ -53,4 +53,5 @@ This single command executes the entire pipeline:
 This is still a work in progress.
 - Create and implement the model (based on BLP(1995) combined with nested logit)
 - Expand to all US states listed in Inside Airbnb
+- Further automate the 
 
